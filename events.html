@@ -10,7 +10,6 @@
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="lib/bootstrap/css/justified-nav.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,7 +22,7 @@
     <div class="container">
 
       <div class="masthead">
-        <h3 class="text-muted">Jegybazár</h3>
+        <h3 class="text-muted">Jegybazár | Események</h3>
 
         
         <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
@@ -56,11 +55,11 @@
       <div class="jumbotron">
         <h1>Események</h1>
         <p class="lead">Itt találod az események táblázatát. Ha érdekel egy, akkor innen azonnal tovább tudsz ugrani a jegyvásárlásra. Jó szórakozást!</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+        
       </div>
 
       <!-- Example row of columns -->
-      <div class="row">
+<!--       <div class="row">
         <table class="table table-dark">
           <thead>
             <tr>
@@ -97,15 +96,43 @@
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> -->
+<div class="card-deck events-card-deck">
+  <a href="tickets.html?event=1" class="card">
+    <img class="card-img-top" src="images/sziget.png" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Sziget Fesztivál</h4>
+      <p class="card-text">Látogass el a 25 éves Szigetre és bulizz a legjobb arcokkal</p>
+      <p class="card-text"><small class="text-muted">2017-08-03</small></p>
+      <button class="btn btn-link float-right">Tovább</button>
+    </div>
+  </a>
+  <a href="tickets.html?event=2" class="card">
+    <img class="card-img-top" src="images/diotoro.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Diótörő Balett</h4>
+      <p class="card-text">Nézd meg a grandiőzus balett előadást most elővételben</p>
+      <p class="card-text"><small class="text-muted">2017-11-23</small></p>
+      <p><button class="btn btn-link float-right">Tovább</button></p>
+    </div>
+  </a>
+  <a href="tickets.html?event=3" class="card">
+    <img class="card-img-top" src="images/macskak.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Macskák Musical</h4>
+      <p class="card-text">Amerika házhoz jön, ebben a nagyszerű és izgalmas musicalban</p>
+      <p class="card-text"><small class="text-muted">2018-02-11</small></p>
+      <p><button class="btn btn-link float-right">Tovább</button></p>
+    </div>
+</a>
+    </div> <!-- /container -->
 
+    <div class="container footer-container">
       <!-- Site footer -->
       <footer class="footer">
         <p>&copy; Company 2017</p>
       </footer>
-
-    </div> <!-- /container -->
-
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -113,7 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   </body>
 </html>
