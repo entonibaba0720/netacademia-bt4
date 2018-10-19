@@ -99,3 +99,5 @@ body { font-family: 'Roboto', sans-serif; padding-bottom: 50px;}
 .events-card-deck .card:hover { cursor: pointer; box-shadow: 1px 1px 6px; text-decoration: none }
 .events-card-deck .card .btn-link:hover { text-decoration: none; cursor: pointer }
 .events-card-deck .card .btn-link { position: absolute; right: 15px; bottom: 15px }
+.events-search-row { margin-bottom: 35px }
+.events-search-row button i { transform: scale(-1, 1) }

@@ -55,7 +55,19 @@
       <div class="jumbotron">
         <h1>Események</h1>
         <p class="lead">Itt találod az események táblázatát. Ha érdekel egy, akkor innen azonnal tovább tudsz ugrani a jegyvásárlásra. Jó szórakozást!</p>
-        
+      </div>
+
+      <div class="row events-search-row">
+        <div class="col-12">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Keresés..." aria-label="keresés">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </div>
       </div>
 
       <!-- Example row of columns -->
@@ -113,7 +125,7 @@
       <h4 class="card-title">Diótörő Balett</h4>
       <p class="card-text">Nézd meg a grandiőzus balett előadást most elővételben</p>
       <p class="card-text"><small class="text-muted">2017-11-23</small></p>
-      <p><button class="btn btn-link float-right">Tovább</button></p>
+      <button class="btn btn-link float-right">Tovább</button>
     </div>
   </a>
   <a href="tickets.html?event=3" class="card">
@@ -122,7 +134,7 @@
       <h4 class="card-title">Macskák Musical</h4>
       <p class="card-text">Amerika házhoz jön, ebben a nagyszerű és izgalmas musicalban</p>
       <p class="card-text"><small class="text-muted">2018-02-11</small></p>
-      <p><button class="btn btn-link float-right">Tovább</button></p>
+      <button class="btn btn-link float-right">Tovább</button>
     </div>
 </a>
     </div> <!-- /container -->
@@ -142,5 +154,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <script>
+      $(".events-search-row input").on("keyup", function(ev) {
+      $.each( $(".events-card-deck .card .card-title"), function(i, e)   {
+          var elem = $(e);
+          var search = ev.target.value.toLowerCase();
+          var content = elem.html().toLowerCase();
+          if ( content.indexOf(search) == -1 ) {
+            elem.parents(".card").hide();
+          } else {
+            elem.parents(".card").show();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
